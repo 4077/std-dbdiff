@@ -1,0 +1,15 @@
+{
+    "name": "fed/std-dbdiff",
+    "type": "ewma-module",
+    "description": "ewma DBDiff/DBDiff adapter",
+    "authors": [
+        {
+            "name": "fed",
+            "email": "ewmafw@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "fed/ewma-module-installer-plugin": "~0.0.1"
+    }
+}
