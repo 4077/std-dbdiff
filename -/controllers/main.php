@@ -89,7 +89,7 @@ class Main extends \Controller
 
         $commandHiddenPasswords = str_replace([$sourceConfig['pass'], $targetConfig['pass']], '********', $command);
 
-        $process = proc_open($command, [['pipe', 'r'], ['pipe', 'w'], ['pipe', 'w']], $pipes);
+        $process = proc_open($command, [['pipe', 'r'], ['pipe', 'w'], ['pipe', 'w']], $pipes, $this->app->publicRoot);
 
         if (is_resource($process)) {
             $this->log($commandHiddenPasswords);
